@@ -10,9 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="log4net.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\LogChanger\LogChanger.csproj" />
   </ItemGroup>
 
 </Project>

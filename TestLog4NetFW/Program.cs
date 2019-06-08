@@ -1,10 +1,12 @@
 ﻿using log4net;
 using log4net.Appender;
+using log4net.Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogChanger;
 
 namespace TestLog4NetFW
 {
@@ -22,12 +24,14 @@ namespace TestLog4NetFW
 
         static void Main(string[] args)
         {
+            //XmlConfigurator.Configure(new FileInfo("log4net.config"));
             var logger = LogManager.GetLogger(typeof(Program));
             var logger2 = LogManager.GetLogger("zuzu");
             logger.Info("Test");
             logger2.Info("zuzu");
 
-            TestChangeFile(logger);
+            // TestChangeFile(logger);
+            Changer.ChangeLogName(@"c:\tmp\zzz.log");
             logger2.Info("rrrr");
         }
     }

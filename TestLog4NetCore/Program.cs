@@ -5,6 +5,7 @@ using System.Xml;
 using log4net;
 using log4net.Appender;
 using log4net.Config;
+using LogChanger;
 
 namespace TestLog4NetCore
 {
@@ -39,9 +40,11 @@ namespace TestLog4NetCore
 
             logger.Error("Hello World toto3");
 
-            TestChangeFile(logger);
+            // TestChangeFile(logger);
 
+            Changer.ChangeLogName(@"c:\tmp\lll.log");
 
+            logger.Error("Hello World toto4");
         }
     }
 }
