@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LogChanger;
 
 namespace TestLog4NetFW
 {
@@ -31,7 +30,8 @@ namespace TestLog4NetFW
             logger2.Info("zuzu");
 
             // TestChangeFile(logger);
-            Changer.ChangeLogName(@"c:\tmp\zzz.log");
+            //LogChanger.Changer.ChangeLogName(@"c:\tmp\zzz.log");
+            LogChangerStd.ChangerStd.ChangeLogName(@"c:\tmp\zzz.log");
             logger2.Info("rrrr");
         }
     }

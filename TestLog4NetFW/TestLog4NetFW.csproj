@@ -50,10 +50,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\LogConfig\log4net.config">
+      <Link>log4net.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LogChangerStd\LogChangerStd.csproj">
+      <Project>{792af079-e6c9-460d-8d73-a81b85130849}</Project>
+      <Name>LogChangerStd</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LogChanger\LogChanger.csproj">
       <Project>{cfe60189-aaec-43b9-8303-81ffe254a9db}</Project>
       <Name>LogChanger</Name>

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,10 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LogConfig\log4net.config" Link="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LogChangerStd\LogChangerStd.csproj" />
     <ProjectReference Include="..\LogChanger\LogChanger.csproj" />
   </ItemGroup>
 

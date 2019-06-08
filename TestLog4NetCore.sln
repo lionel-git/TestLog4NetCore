@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLog4NetFW", "TestLog4Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogChanger", "LogChanger\LogChanger.csproj", "{CFE60189-AAEC-43B9-8303-81FFE254A9DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogChangerStd", "LogChangerStd\LogChangerStd.csproj", "{792AF079-E6C9-460D-8D73-A81B85130849}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LogConfig", "LogConfig", "{BB825989-F708-4599-B9FD-8DE166D294EE}"
+	ProjectSection(SolutionItems) = preProject
+		LogConfig\log4net.config = LogConfig\log4net.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +34,10 @@ Global
 		{CFE60189-AAEC-43B9-8303-81FFE254A9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFE60189-AAEC-43B9-8303-81FFE254A9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFE60189-AAEC-43B9-8303-81FFE254A9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792AF079-E6C9-460D-8D73-A81B85130849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792AF079-E6C9-460D-8D73-A81B85130849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792AF079-E6C9-460D-8D73-A81B85130849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792AF079-E6C9-460D-8D73-A81B85130849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
