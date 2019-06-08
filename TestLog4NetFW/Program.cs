@@ -22,10 +22,13 @@ namespace TestLog4NetFW
 
         static void Main(string[] args)
         {
-            var logger = LogManager.GetLogger("zozo");
+            var logger = LogManager.GetLogger(typeof(Program));
+            var logger2 = LogManager.GetLogger("zuzu");
             logger.Info("Test");
+            logger2.Info("zuzu");
 
             TestChangeFile(logger);
+            logger2.Info("rrrr");
         }
     }
 }
