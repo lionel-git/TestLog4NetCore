@@ -33,6 +33,10 @@ namespace TestLog4NetFW
             //LogChanger.Changer.ChangeLogName(@"c:\tmp\zzz.log");
             LogChangerStd.ChangerStd.ChangeLogName(@"c:\tmp\zzz.log");
             logger2.Info("rrrr");
+
+            Console.WriteLine("Wait for key...");
+            Console.ReadKey();
+
         }
     }
 }

@@ -41,11 +41,13 @@ namespace TestLog4NetCore
 
             // TestChangeFile(logger);
 
-            //LogChanger.Changer.ChangeLogName(@"c:\tmp\lll.log");
+            LogChanger.Changer.ChangeLogName(@"c:\tmp\lll.log");
 
-            LogChangerStd.ChangerStd.ChangeLogName(@"c:\tmp\lll.log");
+            //LogChangerStd.ChangerStd.ChangeLogName(@"c:\tmp\lll.log");
 
             logger.Error("Hello World toto4");
+            Console.WriteLine("Wait for key...");
+            Console.ReadKey();
         }
     }
 }
