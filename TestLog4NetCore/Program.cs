@@ -16,7 +16,7 @@ namespace TestLog4NetCore
             FileAppender f = ret[0] as FileAppender;
             f.File = @"c:\tmp\titi.log";
             f.ActivateOptions();
-            logger.Info("zizi");          
+            logger.Info("titi");          
         }
 
 

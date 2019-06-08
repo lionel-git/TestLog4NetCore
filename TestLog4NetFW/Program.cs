@@ -10,7 +10,6 @@ namespace TestLog4NetFW
 {
     class Program
     {
-
         public static void TestChangeFile(ILog logger)
         {
             var ret = logger.Logger.Repository.GetAppenders();
